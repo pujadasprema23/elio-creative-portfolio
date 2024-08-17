@@ -1,0 +1,100 @@
+.container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container .box{
+    width: 580px;
+    height: 480px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 5s;
+}
+
+.container .box.box-1{
+ background-image: url(images/1.png);
+ background-size: cover;
+}
+.container .box.box-2{
+ background-image: url(images/2.png);
+ background-size: cover;
+}
+.container .box.box-3{
+ background-image: url(images/3.png);
+ background-size: cover;
+}
+.container .box:hover{
+ background-position: bottom;
+}
+
+.text-outline{
+    -webkit-text-stroke: 1px white;
+
+}
+/* for second one */
+.second-container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.second-container .second-box{
+    width: 580px;
+    height: 480px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 5s;
+}
+
+.second-container .second-box.box-4{
+ background-image: url(images/4.png);
+ background-size: cover;
+}
+.second-container .second-box.box-5{
+ background-image: url(images/5.png);
+ background-size: cover;
+}
+.second-container .second-box.box-6{
+ background-image: url(images/6.png);
+ background-size: cover;
+}
+.second-container .second-box:hover{
+ background-position: bottom;
+}
+
+.text-outline{
+    -webkit-text-stroke: 1px white;
+
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .container{
+        flex-direction: column;
+    }
+    .box.box-1{
+        width: 200px;
+    }
+    .box.box-2{
+        width: 200px;
+    }
+    .box.box-3{
+        width: 200px;
+    }
+    .second-container{
+        flex-direction: column;
+    }
+    .second-box.box-4{
+        width: 200px;
+    }
+    .second-box.box-5{
+        width: 200px;
+    }
+    .second-box.box-6{
+        width: 200px;
+    }
+}
+
