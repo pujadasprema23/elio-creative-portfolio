@@ -6,6 +6,8 @@
     <title>Document</title>
     <!-- css link -->
      <link rel="stylesheet" href="style.css">
+     <!-- Aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- daisyui link -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -48,9 +50,10 @@
 </div>
     </header>
     <main class="">
-      <!-- unique home pages section -->
+      <!-- unique home pages dark section -->
         <section class="bg-gray-950 w-full p-24">
-             <h1 class="text-3xl md:text-5xl text-white font-bold text-center pt-28">Unique Home Pages Dark</h1>
+             <h1 class="text-3xl md:text-5xl text-white font-bold text-center pt-28"  
+             data-aos="fade-in">Unique Home Pages Dark</h1>
              <p class="md:text-xl text-white text-center pt-8 pb-10">Unique React Template for the Creative, Personal Portfolio</p>
              <!-- flex -->
               <div class="gap-12 container mx-auto">
@@ -76,11 +79,11 @@
               </div>
         </section>
         <!-- unique home pages light section -->
-         <section class="bg-zinc-800 w-full p-24 ">
-            <h1 class="text-3xl md:text-5xl text-white font-bold text-center pt-28">Unique Home Pages Light</h1>
+         <section class="bg-zinc-800 w-full p-24">
+            <h1 class="text-3xl md:text-5xl text-white font-bold text-center pt-28" " >Unique Home Pages Light</h1>
              <p class="md:text-xl text-white text-center pt-8 pb-10">Unique React Template for the Creative, Personal Portfolio</p>
               <!-- flex -->
-              <div class="gap-12 second-container mx-auto">
+              <div class="gap-12 container second-container mx-auto " >
                    <div class="second-box box-4">
                     
                    </div>
@@ -118,5 +121,9 @@
               </div>
            </section>
     </footer>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
